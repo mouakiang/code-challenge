@@ -28,7 +28,7 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    return arr.map((pet) => pet.name);
 }
 
 /*
@@ -37,7 +37,7 @@ OUTPUT:
 */
 
 export function getNamesOfDogs(arr) {
-    return [];
+    return arr.filter((pet) => pet.type === 'dog').map((dog) => dog.name);
 }
 
 /*
@@ -46,9 +46,7 @@ Output:
 ['cat', 'frog', 'dog', 'dog']
 */
 
-export function makeReversedArrayOfTypes(arr) {
-    return [];
-}
+export function makeReversedArrayOfTypes(arr) {}
 
 /*
 Output:
